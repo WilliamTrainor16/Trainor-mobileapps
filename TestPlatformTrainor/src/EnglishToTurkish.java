@@ -21,22 +21,22 @@ public class EnglishToTurkish {
 			
 		} // end of EnglishToTurkish command
 		// Adds words to the dictionary list 
-		public void addEntry(String e, String s){
-			String entry [] = {e, s}; 
+		public void addEntry(String e, String t){
+			String entry [] = {e, t}; 
 			dictionary.add(entry);
 		}
 		// translate function
-		public String translate(String s){
+		public String translate(String t){
 			String result = ""; // Blank word 
 			
 			// Search for translation 
 			for (int w = 0; w < dictionary.size(); w++){
-				if (s.equals(dictionary.get(w)[0])){
+				if (t.equals(dictionary.get(w)[0])){
 					result = dictionary.get(w)[1]; // get match
 				}
 			}
 			if (result.equals("")){
-				result = s; //set to incoming word
+				result = t; //set to incoming word
 			}
 			return result; // Give back to the program
 		}

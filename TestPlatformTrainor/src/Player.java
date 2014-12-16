@@ -9,7 +9,7 @@ public class Player {
 	public Player (String n){
 		name = n; // Sets name 
 		position = 0; // Makes Position = 0
-	} 
+	} // end constructor
 	
 	// Methods for our Player 
 	public String getName() { 
@@ -18,7 +18,7 @@ public class Player {
 	
 	public int getPosition() { 
 		return position;
-	} // end getPosition
+	} // end getPosition 
 	
 	public void setEmail(String em){
 	email = em; 

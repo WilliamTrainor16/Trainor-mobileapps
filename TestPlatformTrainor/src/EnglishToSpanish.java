@@ -8,8 +8,7 @@ public class EnglishToSpanish {
 	
 	public EnglishToSpanish() {
 		dictionary = new ArrayList<String []>(0);
-		
-		// Add words to the dictionary 
+		// Add words to the dictionary list
 		addEntry("this","esta"); 
 		addEntry("dog", "pero"); 
 		addEntry("is", "es"); 
@@ -18,10 +17,10 @@ public class EnglishToSpanish {
 		addEntry("hello","hola"); 
 		addEntry("bye","adios");
 	}
-	// Adds words to the dictionary list 
-	public void addEntry(String e, String s){
-		String entry [] = {e, s}; 
-		dictionary.add(entry);
+		// Add words to the dictionary list
+	public void addEntry(String e, String s){ 
+		String entry [] = {e, s};
+		dictionary.add(entry); 
 	}
 	// translate function
 	public String translate(String s){
