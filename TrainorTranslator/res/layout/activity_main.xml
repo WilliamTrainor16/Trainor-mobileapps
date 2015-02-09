@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.trainortranslator.MainActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editEnglish"
+            android:layout_weight = "0.5"
+ 			android:layout_height="100dp" 
+ 			>
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTranslate"
+            android:layout_weight = "0.5"
+ 			android:layout_height="100dp"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonTranslateWord"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" 
+            android:onClick ="buttonTranslateWordClicked"
+            android:text="Translate Word" />
+
+        <Button
+            android:id="@+id/buttonAddWord"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" 
+            android:onClick = "buttonAddWordClicked"
+            android:text="Add Word" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonPhrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:onClick = "buttonPhraseClicked"
+            android:text="Translate Phrase" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonSpeak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:onClick = "buttonSpeakClicked"
+            android:text="Speak" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:onClick = "buttonClearClicked"
+            android:text="Clear" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6" 
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </TableRow>
+
+</LinearLayout>
