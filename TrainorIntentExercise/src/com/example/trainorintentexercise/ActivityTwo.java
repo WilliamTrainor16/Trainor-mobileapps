@@ -18,7 +18,7 @@ public class ActivityTwo extends Activity {
 	@Override 
 	protected void onResume() { 
 		super.onResume(); 
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_two);
 	} // end onResume
 
 	@Override
